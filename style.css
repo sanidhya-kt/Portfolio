@@ -4,6 +4,9 @@
   font-family: "poppings", Times, serif;
   box-sizing: border-box;
 }
+html{
+  scroll-behavior: smooth;
+}
 
 body {
   background: #000;
@@ -13,14 +16,14 @@ body {
 #header {
   width: 100%;
   height: 100vh;
-  background-image: url(images/background.png);
+  background-image: url(images/pr3.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed
 }
 
 .container {
-  padding: 10px 10px;
+  padding: 0 30px 0 0;
 }
 
 nav {
@@ -140,6 +143,10 @@ nav ul li a:hover::after {
   width: 50%;
 }
 
+.tab-contents ul li{
+  margin-bottom: 15px;
+}
+
 .tab-contents ul li span {
   font-size: 14px;
   color: #ff004f;
@@ -157,9 +164,11 @@ nav ul li a:hover::after {
 
 #portfolio {
   padding: 50px;
+  
 }
 
 .worklist {
+  height: 75vh;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 40px;
@@ -174,6 +183,7 @@ nav ul li a:hover::after {
 
 .work img {
   width: 100%;
+  height: 100%;
   border-radius: 10px;
   display: block;
   transition: tranform 0.5s;
@@ -328,49 +338,108 @@ form .btn3{
   color: #ff004f;
 }
 
-/*---------------media query ------------------
-nav .fas{
+/*---------------media query ------------------*/
+nav .fa-solid{
   display: none;
 }
+
 @media only screen and (max-width: 600px){
   #header{
     background-image: url(images/phone-background.png);
   }
 
-  .header-text{
-    margin-top: 100%;
+  /* .container{
+    padding: 0px 20px 0px 0;
+  } */
+  .header-text {
+    margin: 200px 40px 0px 59px;
     font-size: 16px;
-  }
+}
   .header-text h1{
     font-size: 30px;
   }
-  nav .fas{
+
+  nav .fa-solid{
     display: block;
     font-size: 25px;
   }
-
+  
   nav ul{
     background: #ff004f;
     position: fixed;
-    top: 0px;
-    right: 0;
-    width: -200px;
+    top: 0;
+    right: -150px;
+    width: 150px;
     height: 100vh;
-    padding-top: 30px;
+    padding-top: 0;
+    z-index: 2;
+    transition: right 0.5s;
   }
 
   nav ul li{
     display: block;
-    margin: 25px;
+    margin: 45px 2px 2px 15px;
+    padding-top: 20px;
   }
 
-  nav ul .fas{
+  nav ul .fa-solid{
     position: absolute;
-    top: 25px;
+    top: 20px;
     left: 25px;
     cursor: pointer;
   }
 
-
+  .sub-title{
+    font-size: 40px;
+  }
+  .about-col-1, .about-col-2{
+    flex-basis: 100%;
+  }
+  .about-col-1{
+    margin-bottom: 20px;
+  }
+  .about-col-1 img {
+    width: 100%;
+    border-radius: 25vh;
+    margin: 0px 0 0px 20px;
 }
-*/
+  .about-col-2{
+    font-size: 14px;
+  }
+  .tab-links{
+    font-size: 16px;
+  }
+
+  #portfolio {
+    padding: 0px 0 0px 20px;
+}
+.worklist {
+  height: 150vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 13px;
+  margin-top: 50px;
+}
+
+.work:hover .layer {
+  padding: 25px;
+}
+
+.row{
+  display: block;
+}
+form .btn3 {
+  margin-left: 40px;
+}
+.copyright{
+  font-size: 14px;
+}
+}
+
+#msg{
+  display: block;
+  color: aqua;
+  margin: -20px 50px 0px 180px;
+  font-size: 16px;
+}
+
