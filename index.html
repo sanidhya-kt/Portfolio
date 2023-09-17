@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script
+      
+
       src="https://kit.fontawesome.com/41b42370a4.js"
       crossorigin="anonymous"
     ></script>
@@ -26,9 +29,9 @@
           <i class="fa-solid fa-list" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
-          <p>Software Developer</p>
-          <h1>Hey, I'm <span>Sanidhya</span><br /></h1>
+          <h1>Hey...!, I'm <span>Sanidhya</span><br /></h1>
           <h2>Kumar Tiwari</h2>
+          <p>I'm <span class="animation"></span></p>
         </div>
       </div>
     </div>
@@ -280,6 +283,16 @@
           })
           .catch((error) => console.error("Error!", error.message));
       });
+    </script>
+
+    <script>
+      let type = new Typed('.animation', {
+        strings: ['Software Developer....!','Fresher....!','Computer Science Graduate....!',],
+        typespeed: 100,
+        backspeed: 50,
+        backdelay: 2000,
+        loop: true,
+      })
     </script>
   </body>
 </html>

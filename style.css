@@ -16,7 +16,7 @@ body {
 #header {
   width: 100%;
   height: 100vh;
-  background-image: url(images/pr3.jpg);
+  background-image: url(images/desktop-wallpaper-better-start-of-a-future-technology-background-portfolio.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed
@@ -65,14 +65,15 @@ nav ul li a:hover::after {
 }
 
 .header-text {
-  font-family: "arial", "Times New Roman";
+  font-family: "Roboto", "Times New Roman";
   font-size: 25px;
-  margin-top: 25vh;
+  margin-top: 28vh;
   margin-left: 15vmax;
 }
 
 .header-text p {
-  margin: 8px 15vh;
+  margin: 10px 2.5vh;
+  width: 70vh;
 }
 
 .header-text span {
@@ -81,7 +82,7 @@ nav ul li a:hover::after {
 }
 
 .header-text h2 {
-  margin-left: 12vh;
+  margin-left: 55px;
 }
 
 /*-----------------------ABOUT ME SECTION -----------------------------*/
